@@ -9,23 +9,25 @@
 
 *******************************************************************************/
 
-
 // ESERCIZIO 1
 // per incrementare devo scrivere i minore di 5 o il ciclo For non si avvierà
 //Errato: for (let i = 0; i > 5; i++)
 for (let i = 0; i < 5; i++) {
-    console.log(i);
+  console.log(i);
 }
 
-
-// // ESERCIZIO 2
-// function addIfEven(num) {
-//     if (num % 2 = 0) {
-//         return num + 5;
-//     }
-//     return num;
-// }
-
+// ESERCIZIO 2
+//la funzione deve restituire un numero pari sommato a 5
+// Errore di sintassi: aggiungo 3 uguali
+//"=" uno solo è operatore di assegnazione (usato per le variabili);
+// '==' ; '===' -> Loro sono operatori di uguaglianza ; uguaglianza e tipo di dato.
+function addIfEven(num) {
+  //errato:if (num % 2 = 0)
+  if (num % 2 === 0) {
+    return num + 5;
+  }
+  return num;
+}
 
 // // ESERCIZIO 3
 // function loopToFive() {
@@ -33,7 +35,6 @@ for (let i = 0; i < 5; i++) {
 //         console.log(i);
 //     }
 // }
-
 
 // // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
 // function displayEvenNumbers() {
