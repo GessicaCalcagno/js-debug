@@ -43,14 +43,17 @@ checkAge(31);
 //_________________________________________
 
 // ESERCIZIO 2
+//Non è molto utile la funzione scritta così perchè anche senza funzione e solo col console.log stamperebbe
 function printColorsNumber() {
-    const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-    //è scritto male lenght --> length
-    console.log(`Nella mia palette ci sono ${colors.length} colori!`);
+  const colors = ["blue", "red", "yellow", "green", "black"];
+  //è scritto male lenght --> length
+  console.log(`Nella mia palette ci sono ${colors.length} colori!`);
 }
 printColorsNumber();
+//_____________________________________
 
-// // ESERCIZIO 3
+// ESERCIZIO 3
+//Tramite prompt chiedo di inserire un numero ed alla fine sommo il numero chiesto a qualunque numero io voglia quando dichiaro la funzione addNumbers(numeroAcaso)
 // //Aggiungo il parametro 'numero da aggiungere'
 // function addNumbers(numberToAdd) {
 //     //aggiungo parseInt o concatenerebbe
@@ -62,32 +65,42 @@ printColorsNumber();
 // }
 // //Aggiungo un numero ()
 // addNumbers(11);
+//_____________________________________
 
-// // ESERCIZIO 4
-// //Controlla se l'email inserita è nell'array addresses
+
+// ESERCIZIO 4
+//Controlla se l'email inserita è nell'array addresses
 // function checkAccess() {
-//     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
-//     const userEmail = prompt('Inserisci il tuo indirizzo email');
+//   const addresses = [
+//     "mymail@mail.com",
+//     "yourmail@mail.com",
+//     "hermail@mail.com",
+//     "hismail@mail.com",
+//   ];
+//   const userEmail = prompt("Inserisci il tuo indirizzo email");
 
-//     //Error: 'false' scritto come una stringa invece è booleano
-//     // let grantAccess = false;
+//   //Error: 'false' scritto come una stringa invece è booleano
+//   // let grantAccess = false;
 
-//     if (addresses.includes(userEmail)) {
-//         // grantAccess = true;
-//         console.log('Accesso consentito!');
-//     }  else {
-//      console.log('Accesso negato!');
-//     }
+//   if (addresses.includes(userEmail)) {
+//     // grantAccess = true;
+//     console.log("Accesso consentito!");
+//   } else {
+//     console.log("Accesso negato!");
+//   }
 
-//     // if (grantAccess === true) {
-//     //     console.log('Accesso consentito!');
-//     // } else {
-//     //     console.log('Accesso negato!');
-//     // }
+//   //Questa condizione non serve
+//   // if (grantAccess === true) {
+//   //     console.log('Accesso consentito!');
+//   // } else {
+//   //     console.log('Accesso negato!');
+//   // }
 // }
 // checkAccess();
+//_________________________________
 
-// // ESERCIZIO 5 (suggerimento: c'è un solo errore)
+// ESERCIZIO 5 (suggerimento: c'è un solo errore)
+//Inserisco la parentesi graffa per chiudere il ciclo for, come nella funzione precedente il controllo booleano potremmo anche eliminarlo
 // function checkAccessImproved() {
 //     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
 
@@ -97,16 +110,17 @@ printColorsNumber();
 
 //     for (let i = 0; i < addresses.length; i++) {
 //         const email = addresses[i];
-//     }; //Aggiungere parentesi graffa
+  
 
 //         //Questa condizione sta meglio fuori dal ciclo for
 //         if (userEmail.length > 5) {
 
 //             if (email === userEmail) {
 //                 grantAccess = 'true';
-//             }u
+//             }
 
 //         }
+//     }; //Aggiungere parentesi graffa
 
 //         //Questa condizione sta meglio fuori dal ciclo for per stampare una sola volta
 //         if (grantAccess) {
@@ -116,7 +130,9 @@ printColorsNumber();
 //         }
 //     }
 //     checkAccessImproved();
+//______________________________________________________________________________________________
 
+// ES. 5 ERRATO____
 // function checkAccessImproved() {
 //     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
 
