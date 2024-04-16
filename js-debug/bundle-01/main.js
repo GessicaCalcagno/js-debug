@@ -22,19 +22,22 @@ for (let i = 0; i < 5; i++) {
 //"=" uno solo è operatore di assegnazione (usato per le variabili);
 // '==' ; '===' -> Loro sono operatori di uguaglianza ; uguaglianza e tipo di dato.
 function addIfEven(num) {
-  //errato:if (num % 2 = 0)
+  //Errato: if (num % 2 = 0)
   if (num % 2 === 0) {
     return num + 5;
   }
   return num;
 }
 
-// // ESERCIZIO 3
-// function loopToFive() {
-//     for (let i = 0, i < 5, i++) {
-//         console.log(i);
-//     }
-// }
+// ESERCIZIO 3
+//La funzione crea un loop di 5 elementi e stampa da 0 a 4
+function loopToFive() {
+    //Errato: for (let i = 0, i < 5, i++) 
+    //erroti di sintassi: aggiungo ';'
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
+    }
+}
 
 // // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
 // function displayEvenNumbers() {
