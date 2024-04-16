@@ -12,7 +12,7 @@
 
 // ESERCIZIO 1
 // per incrementare devo scrivere i minore di 5 o il ciclo For non si avvierà
-//Errato: for (let i = 0; i > 5; i++) 
+//Errato: for (let i = 0; i > 5; i++)
 for (let i = 0; i < 5; i++) {
     console.log(i);
 }
