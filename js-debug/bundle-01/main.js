@@ -32,46 +32,46 @@
 // // ESERCIZIO 3
 // //La funzione crea un loop di 5 elementi e stampa da 0 a 4
 // function loopToFive() {
-//     //Errato: for (let i = 0, i < 5, i++)
-//     //erroti di sintassi: aggiungo ';'
-//     for (let i = 0; i < 5; i++) {
-//         console.log(i);
-//     }
+//   //Errato: for (let i = 0, i < 5, i++)
+//   //errori di sintassi: aggiungo ';'
+//   for (let i = 0; i < 5; i++) {
+//     console.log(i);
+//   }
 // }
 
+
 // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
-function displayEvenNumbers() {
-  let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-  console.log(numbers);
+function displayEvenNumbers(numbers) {
   let evenNumbers = [];
   console.log(evenNumbers);
-
   //Errore di sintassi tolgo ';'
   //i < numbers.length - 1: devo togliere il -1 o non leggerebbe per tutta la lunghezza dell'array
   for (let i = 0; i < numbers.length; i++) {
     //Errore di uguaglianza e tolgo ';'
     //Essendo un array devo aggiungere number[i]
     if (numbers[i] % 2 === 0) {
-        //i : di cosa? Di ogni elemento dell'array numbers
+      //i : di cosa? Di ogni elemento dell'array numbers
       evenNumbers.push(numbers[i]);
     }
   }
   //Return: devo posizionarlo fuori dal ciclo for o mi avrebbe restituito sempre l'array vuoto per come lo avevo dichiarato
-  return evenNumbers;
+  console.log(evenNumbers);
 }
+
 //Controllo aggiungendo il console.log
-console.log(displayEvenNumbers());// dovrebbe restituire [2,4,6,8]
+// console.log(displayEvenNumbers());// dovrebbe restituire [2,4,6,8]
+displayEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8]);
 
 
-//Es 4 COPIA ERRATA
+// //Es 4 COPIA ERRATA
 // function displayEvenNumbers() {
 //     let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 //     let evenNumbers = [];
 //     for (let i = 0; i < numbers.length - 1; i++;) {
-//         if (numbers % 2 = 0); {
-//             evenNumbers.push(i);
+//         if (numbers[i] % 2 = 0); {
+//             evenNumbers.push(numbers[i]);
 //         }
-//         return evenNumbers;
+//       }
+//       return evenNumbers;
 //     }
-// }
 // displayEvenNumbers(); // dovrebbe restituire [2,4,6,8]
